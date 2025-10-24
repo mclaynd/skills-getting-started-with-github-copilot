@@ -47,7 +47,7 @@ activities = {
     },
     "Soccer Club": {
         "description": "Practice soccer skills and compete in inter-school matches",
-        "schedule": "Mondays and Wednesdays, 3:30 PM - 5:30 PM",
+        "schedule": "Mondays and Fridays, 3:30 PM - 5:30 PM",
         "max_participants": 25,
         "participants": ["sarah@mergington.edu", "alex@mergington.edu"]
     },
