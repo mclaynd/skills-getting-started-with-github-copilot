@@ -42,8 +42,8 @@ The `-u` flag sets up tracking between your local branch and the remote branch.
 You can also use the GitHub CLI to create and push branches:
 
 ```bash
-gh repo clone mclaynd/skills-getting-started-with-github-copilot
-cd skills-getting-started-with-github-copilot
+gh repo clone <owner>/<repository>
+cd <repository>
 git checkout -b accelerate-with-copilot
 git push -u origin accelerate-with-copilot
 ```
@@ -56,8 +56,8 @@ To verify the branch exists remotely:
 # List all remote branches
 git branch -r
 
-# Or use GitHub CLI
-gh repo view mclaynd/skills-getting-started-with-github-copilot --web
+# Or use GitHub CLI (replace with your repository details)
+gh repo view <owner>/<repository> --web
 ```
 
 ## Branch Information

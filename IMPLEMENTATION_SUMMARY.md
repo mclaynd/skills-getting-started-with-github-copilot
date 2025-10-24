@@ -31,19 +31,17 @@ An executable script has been provided at `scripts/create-and-publish-branch.sh`
 ## Next Steps to Complete Publishing
 
 ### Option 1: Manual Publishing
-To publish the branch to the remote repository, run:
+To publish the branch to the remote repository, navigate to the repository root and run:
 
 ```bash
-cd /home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot
 git checkout accelerate-with-copilot
 git push -u origin accelerate-with-copilot
 ```
 
 ### Option 2: Use the Automation Script
-Alternatively, run the provided script:
+Alternatively, from the repository root, run the provided script:
 
 ```bash
-cd /home/runner/work/skills-getting-started-with-github-copilot/skills-getting-started-with-github-copilot
 ./scripts/create-and-publish-branch.sh
 ```
 
@@ -59,8 +57,8 @@ Once published, you can verify the branch with:
 # Check remote branches
 git branch -r | grep accelerate-with-copilot
 
-# View on GitHub
-gh repo view mclaynd/skills-getting-started-with-github-copilot --web
+# View on GitHub (replace with your repository)
+gh repo view <owner>/<repository> --web
 ```
 
 ## Files Created/Modified
