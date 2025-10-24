@@ -13,6 +13,13 @@ document.addEventListener("DOMContentLoaded", () => {
       // Clear loading message
       activitiesList.innerHTML = "";
 
+      // Clear existing activity options (keep the default option)
+      const defaultOption = activitySelect.querySelector('option[value=""]');
+      activitySelect.innerHTML = "";
+      if (defaultOption) {
+        activitySelect.appendChild(defaultOption);
+      }
+
       // Populate activities list
       Object.entries(activities).forEach(([name, details]) => {
         const activityCard = document.createElement("div");
